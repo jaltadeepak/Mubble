@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📽 Mubble</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">Mubble</div>
+    <div id="score">Score: <span id="score-value">0</span></div>
+    <div class="main">
+        <img src="" alt="" id="poster">
+        <span id="name"></span>
+        <span id="director"></span>
+    </div>
+    <div class="slider-container">
+        <input type="range" id="yearSlider" min="1924" max="2024" step="1" value="2020">
+        <div class="scale" id="yearScale"><span style="left: -40px;">1924</span><span style="right: -40px;">2024</span>
+        </div>
+        <span class="answer">
+            Release Year=
+            <span id="yearIndicator">2022</span>
+        </span>
+    </div>
+    <div class="submit">
+        <input type="button" value="Submit" id="submit-button">
+    </div>
+
+    <div id="notice-container" class="notice-container hidden">
+        <div id="notice-content" class="notice-content">
+            <h2>Game Over</h2>
+            <p>Your final score is: <span id="final-score">0</span></p>
+            <button id="reset-button">Reset</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
